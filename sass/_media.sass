@@ -1,0 +1,73 @@
+@media (max-width: 1200px)
+  .container
+    width: 970px
+  .feedback
+    &::before
+      width: 62%
+@media (max-width: 992px)
+  .container
+    width: 767px
+  .main
+    &-text
+      &__title
+        font-size: 30px
+        line-height: 36px
+  .feedback
+    background: #ffffff
+  .form
+    margin: auto
+
+@media (max-width: 768px)
+  .container
+    width: 95%
+  .main
+    &-wrap
+      flex-direction: column
+    &-text
+      width: 400px
+      margin: auto
+      &__title
+        text-align: center
+  .form
+    &__title
+      margin-bottom: 35px
+      line-height: 36px
+      text-align: center
+    &__subtitle
+      text-align: center
+    &__input
+      width: 47%
+      &:first-child
+        margin-right: 5%
+@media (max-width: 576px)
+  .contaner
+    width: 90%
+  .button
+    display: none
+  .button_sm
+    display: block
+  .header
+    &-wrap
+      flex-direction: column
+  .main
+    padding: 40px 0
+    &-text
+      width: 100%
+  .feedback
+    padding: 40px 0 80px 
+  .form
+    &__input
+      width: 100%
+    &-text
+      flex-direction: column
+      &__item
+        max-width: 100%
+        text-align: center
+        &-2
+        position: relative
+        &-2::before
+          left: 45%
+          bottom: -40px
+          top: unset
+
+    

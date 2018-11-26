@@ -16,6 +16,16 @@
   outline: none;
 }
 
+.button_sm {
+  display: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background: #ffd200 url("../img/feedback/phone.png") no-repeat center center;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+}
+
 .input {
   padding: 25px;
   font-size: 15px;
@@ -517,6 +527,20 @@ template {
 .feedback {
   padding: 94px 0;
   background: url("../img/feedback/feedback-bg.png") no-repeat center right;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
 }
 
 .form {
@@ -607,7 +631,111 @@ body {
   color: #333333;
 }
 
-.container img {
+img {
   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .feedback::before {
+    width: 62%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #ffffff;
+  }
+  .form {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+  .form__title {
+    margin-bottom: 35px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .form__subtitle {
+    text-align: center;
+  }
+  .form__input {
+    width: 47%;
+  }
+  .form__input:first-child {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contaner {
+    width: 90%;
+  }
+  .button {
+    display: none;
+  }
+  .button_sm {
+    display: block;
+  }
+  .header-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main {
+    padding: 40px 0;
+  }
+  .main-text {
+    width: 100%;
+  }
+  .feedback {
+    padding: 40px 0 80px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-text__item {
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .form-text__item-2::before {
+    left: 45%;
+    bottom: -40px;
+    top: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */
