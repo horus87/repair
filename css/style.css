@@ -703,6 +703,9 @@ img {
   .button_sm {
     display: block;
   }
+  .form__button {
+    display: block;
+  }
   .header-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
