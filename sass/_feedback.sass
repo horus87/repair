@@ -1,9 +1,12 @@
 .feedback
-  padding: 94px 0
+  padding: 68px 0
   background: url('../img/feedback/feedback-bg.png') no-repeat center right 
   background-size: contain
   position: relative 
   z-index: 1
+  &-wrap
+    display: flex
+    flex-direction: column
   &:before
     content: ''
     position: absolute
@@ -13,32 +16,13 @@
     height: 100%
     background-color: #ffffff
     z-index: -1
-.form 
-  max-width: 575px
-  &__title
-    font-size: 24px
-    +bold
-    line-height: 35px
-    margin-bottom: 45px
-  &__subtitle
-    display: block
-    margin-bottom: 50px
-  &__input
-    margin-bottom: 30px
-    width: 270px 
-    &:first-child
-      margin-right: 30px
-  &__button
-    display: block
-    padding: 28px 0
-    width: 100%
-    font-size: 16px
+.feedback 
   &-text
+    width: 48.7%
     padding-top: 25px
-    justify-content: space-between
     display: flex
+    justify-content: space-between
     &__item
-      max-width: 225px
       font-size: 15px
       line-height: 24px
       text-align: left
@@ -48,7 +32,7 @@
         display: block
       &-2
         position: relative
-        margin-right: 25px
+        width: 36%
       &-2::before
         content: ""
         display: block
@@ -60,5 +44,28 @@
         background: url('../img/feedback/phone.png') no-repeat center center
         border: 2px solid #cccccc
         border-radius: 50%
-        
+  &__title
+    width: 44%
+    font-size: 24px
+    +bold
+    line-height: 35px
+    margin-bottom: 45px
+  &__subtitle
+    display: block
+    margin-bottom: 50px
+
+.form-feedback
+  width: 48.8%
+  margin-left: 0.4%
+  &__input
+    margin-bottom: 28px
+    width: 47.4%
+    &:first-child
+      margin-right: 3.5%
+  &__button
+    display: block
+    height: 70px
+    width: 100%
+    font-size: 16px
+  
 
