@@ -827,7 +827,7 @@ template {
   background: rgba(0, 0, 0, 0.52);
   z-index: 1;
   overflow: auto;
-  display: block;
+  display: none;
 }
 
 .modal {
@@ -923,7 +923,7 @@ template {
   text-align: center;
   font-size: 16px;
   margin-bottom: 36px;
-  display: none;
+  display: block;
 }
 
 .form-modal {
