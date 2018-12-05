@@ -50,52 +50,46 @@
   background-color: $primary-color
 .modal-form
   width: 48.8%
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
   padding: 75px 0
   &__title
     width: 64.6%
     text-align: center
     font-size: 22px
+    +center-block
     +bold
     margin-top: 0
-    margin-bottom: 35px
+    margin-bottom: 42px
     line-height: 33px
   &__subtitle
     text-align: center
     font-size: 16px
-    margin-bottom: 36px
+    margin-bottom: 48px
     display: block
   
 .form-modal
   width: 64.6%
+  +center-block
+  margin-bottom: 30px
   &__input
     width: 100%
     margin-bottom: 15px 
   &__button 
     margin-top: 15px
-    margin-bottom: 15px
     height: 70px
     width: 100%
     font-size: 16px
     +bold
  
-.form-text_modal
-  display: flex
-  flex-direction: column
-  justify-content: center
-.form-text__item_modal
+.modal-form__text
+  width: 55%
+  +center-block
   text-align: center
-  max-width: 75%
-  margin: auto
+.modal-form__callback
+  margin-bottom: 7px
+  font-size: 15px
   line-height: 20px
-  &::before
-    display: none
-.form-text__item-1.form-text__item_modal
-  margin-bottom: 10px
-.form-text__item-2.form-text__item_modal
-  +bold 
+.modal-form__tel
+  +bold
   font-size: 24px
 
 .modal-discr
@@ -118,7 +112,7 @@
 .modal-list
   list-style-type: none
   padding: 0 0 0 15px
- 
+  width: 100%
   &__item
     margin-bottom: 9px
     font-size: 14px

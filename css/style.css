@@ -658,7 +658,7 @@ template {
 }
 
 .slider__item {
-  width: 31.3%;
+  margin-right: 40px;
 }
 
 .arrow {
@@ -898,14 +898,6 @@ template {
 
 .modal-form {
   width: 48.8%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 75px 0;
 }
 
@@ -913,21 +905,26 @@ template {
   width: 64.6%;
   text-align: center;
   font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Museo Sans Bold', sans-serif;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 42px;
   line-height: 33px;
 }
 
 .modal-form__subtitle {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   display: block;
 }
 
 .form-modal {
   width: 64.6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .form-modal__input {
@@ -937,42 +934,26 @@ template {
 
 .form-modal__button {
   margin-top: 15px;
-  margin-bottom: 15px;
   height: 70px;
   width: 100%;
   font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
-.form-text_modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.modal-form__text {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.form-text__item_modal {
-  text-align: center;
-  max-width: 75%;
-  margin: auto;
+.modal-form__callback {
+  margin-bottom: 7px;
+  font-size: 15px;
   line-height: 20px;
 }
 
-.form-text__item_modal::before {
-  display: none;
-}
-
-.form-text__item-1.form-text__item_modal {
-  margin-bottom: 10px;
-}
-
-.form-text__item-2.form-text__item_modal {
+.modal-form__tel {
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 24px;
 }
@@ -1016,6 +997,7 @@ template {
 .modal-list {
   list-style-type: none;
   padding: 0 0 0 15px;
+  width: 100%;
 }
 
 .modal-list__item {
@@ -1099,6 +1081,12 @@ img {
     width: 85%;
   }
   .form-calculation {
+    width: 70%;
+  }
+  .feedback-text__item-2 {
+    width: 40%;
+  }
+  .form-feedback {
     width: 70%;
   }
   .modal-discr {
@@ -1295,6 +1283,11 @@ img {
   .modal-discr__item_big {
     width: 70%;
     text-align: center;
+  }
+  .slider__item {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 360px;
   }
 }
 

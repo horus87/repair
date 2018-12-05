@@ -8,18 +8,19 @@ $('.slider').slick({
   nextArrow: '<div class="arrow arrow-right"></div>',
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
         arrows: true,
-        centerPadding: '0',
-        slidesToShow: 2
+        slidesToShow: 2,
+        
       }
     },
     {
       breakpoint: 768,
       settings: {
         arrows: false,
-        slidesToShow: 1
+        slidesToShow: 1,
+      
       }
     }
   ]
@@ -28,13 +29,36 @@ $('.slider').slick({
 
 var modal = document.getElementById('modal-js');
 var btn = document.getElementById('button-js');
+var btn2 = document.getElementById('button-js_sm');
 
 btn.onclick = function() {
     modal.style.display = "block";
 }
+
+btn2.onclick = function() {
+  modal.style.display = "block";
+}
+
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
+
+
+$( document ).ready(function() {
+  $('form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      alert('Данные отправлены успешно');
+      $(this).find("input").val("");
+      $("form").trigger("reset");
+    });
+    return false;
+  });
+});
