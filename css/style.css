@@ -480,11 +480,6 @@ template {
       flex-basis: 50%;
 }
 
-.main-img__image {
-  -webkit-transform: scale(1.517);
-          transform: scale(1.517);
-}
-
 .main-adventages {
   display: -webkit-box;
   display: -ms-flexbox;
