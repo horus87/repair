@@ -64,6 +64,6 @@ $( document ).ready(function() {
 
 });
 
-document.querySelector('button-js').addEventListener('click', function() {
+document.querySelector('#button-js').addEventListener('click', function() {
   yaCounter51456473.reachGoal('btn'); return true;
-})
+});
