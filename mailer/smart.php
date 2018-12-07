@@ -35,7 +35,7 @@ $mail->AltBody = 'Это альтернативный текст';
 if(!$mail->send()) {
     return false;
 } else {
-    header ('Location: ../#button-js');
+    return true;
 }
 
 ?>

@@ -8,8 +8,11 @@
 @import 'main'
 @import 'feedback'
 @import 'portfolio'
+@import 'price'
+@import 'conditions'
 @import 'calculation'
-
+@import 'reliability'
+@import 'footer'
 @import 'modal'
 
 *, *:before, *:after
@@ -25,6 +28,15 @@ body
 img
   max-width: 100%
 
+.section
+  &-title
+    +bold
+    line-height: 45px
+    text-align: center
+  &-subtitle
+    font-size: 20px
+    text-align: center
+    display: block
 @import 'media'
 
   
