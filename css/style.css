@@ -480,6 +480,11 @@ template {
       flex-basis: 50%;
 }
 
+.main-img__image {
+  -webkit-transform: scale(1.517);
+          transform: scale(1.517);
+}
+
 .main-adventages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,7 +663,16 @@ template {
 }
 
 .slider__item {
-  margin-right: 40px;
+  text-align: center;
+}
+
+.slick-initialized .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .arrow {
@@ -803,6 +817,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .step__image-wrap {
@@ -976,6 +995,7 @@ template {
   text-align: center;
   line-height: 50px;
   font-size: 32px;
+  font-family: 'Museo Sans Light', sans-serif;
   color: black;
 }
 
@@ -990,7 +1010,7 @@ template {
 }
 
 .contacts {
-  width: 572px;
+  width: 540px;
   padding: 100px 0 120px;
   font-size: 16px;
 }
@@ -1000,6 +1020,18 @@ template {
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.contacts__city:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -45%;
+  width: 14px;
+  height: 20px;
+  background: url("../img/footer/map-icon.png");
 }
 
 .contacts__mode {
@@ -1007,12 +1039,36 @@ template {
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.contacts__mode:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -45%;
+  width: 20px;
+  height: 20px;
+  background: url("../img/footer/clock-icon.png");
 }
 
 .contacts__tel {
   width: 26.3%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.contacts__tel:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -45%;
+  width: 20px;
+  height: 20px;
+  background: url("../img/footer/phone-icon.png");
 }
 
 .contacts__title {
@@ -1021,6 +1077,7 @@ template {
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   line-height: 33px;
+  position: relative;
 }
 
 .contacts-wrap {
@@ -1314,11 +1371,48 @@ img {
   .feedback-text__item-2 {
     width: 40%;
   }
-  .form-feedback {
-    width: 70%;
-  }
   .modal-discr {
     padding: 80px 0 80px 38px;
+  }
+  .step {
+    max-width: 19%;
+    margin-bottom: 40px;
+  }
+  .contacts {
+    width: 485px;
+  }
+  .contacts-wrap {
+    width: 50%;
+  }
+  .contacts__title {
+    width: 70%;
+  }
+  .contacts__city {
+    width: 40%;
+  }
+  .contacts__city:before {
+    left: -35%;
+  }
+  .contacts__mode {
+    width: 40%;
+  }
+  .contacts__mode:before {
+    left: -35%;
+  }
+  .contacts__tel {
+    width: 40%;
+  }
+  .contacts__tel:before {
+    left: -35%;
+  }
+  .portfolio::before {
+    width: 40%;
+  }
+  .map {
+    width: 50%;
+  }
+  .slider__item {
+    margin-right: 10px;
   }
 }
 
@@ -1362,6 +1456,15 @@ img {
   }
   .form-feedback__input:first-child {
     margin-right: 0;
+  }
+  .portfolio {
+    padding: 50px 0 140px;
+  }
+  .portfolio:before {
+    display: none;
+  }
+  .conditions .section-title {
+    width: 70%;
   }
   .calculation {
     background: #ffc000;
@@ -1412,6 +1515,17 @@ img {
   .calculation-list__text {
     width: 85%;
   }
+  .card {
+    width: 48%;
+  }
+  .reliability {
+    padding: 60px 0;
+  }
+  .reliability-title {
+    font-size: 28px;
+    width: 85%;
+    margin: 0 auto;
+  }
   .form-calculation {
     width: 80%;
   }
@@ -1426,6 +1540,44 @@ img {
   }
   .form-modal {
     width: 90%;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacts {
+    width: 100%;
+  }
+  .contacts-wrap {
+    width: 767px;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .contacts__city:before {
+    left: -25%;
+  }
+  .contacts__mode:before {
+    left: -25%;
+  }
+  .contacts__tel:before {
+    left: -25%;
+  }
+  .map {
+    width: 100%;
+  }
+  .arrow-left {
+    left: 39%;
+  }
+  .arrow-right {
+    left: 51%;
+  }
+  .step {
+    max-width: 20%;
+  }
+  .slider__item {
+    margin-right: 0;
   }
 }
 
@@ -1512,10 +1664,17 @@ img {
     width: 70%;
     text-align: center;
   }
-  .slider__item {
-    margin-right: 100px;
-    margin-left: 100px;
-    width: 360px;
+  .conditions .section-title {
+    width: 90%;
+  }
+  .step {
+    max-width: 28%;
+  }
+  .calculation__title {
+    width: 100%;
+  }
+  .calculation__subtitle {
+    width: 100%;
   }
 }
 
@@ -1573,6 +1732,21 @@ img {
   }
   .modal-form {
     width: 90%;
+  }
+  .card {
+    width: 90%;
+  }
+  .price-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .step {
+    max-width: 50%;
+  }
+  .reliability-title {
+    width: 100%;
+    font-size: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */

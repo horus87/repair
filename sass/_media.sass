@@ -33,10 +33,35 @@
     width: 70%
   .feedback-text__item-2
     width: 40%
-  .form-feedback
-    width: 70%
   .modal-discr
     padding: 80px 0 80px 38px;
+  .step
+    max-width: 19%;
+    margin-bottom: 40px; 
+  .contacts
+    width: 485px
+    &-wrap
+      width: 50%
+    &__title
+      width: 70%
+    &__city
+      width: 40% 
+      &:before
+        left: -35%
+    &__mode 
+      width: 40%
+      &:before
+        left: -35%
+    &__tel 
+      width: 40% 
+      &:before
+        left: -35%
+  .portfolio::before
+    width: 40%
+  .map 
+   width: 50%   
+  .slider__item 
+    margin-right: 10px
 @media (max-width: 992px)
   .container
     width: 767px
@@ -67,6 +92,12 @@
       width: 100%
       &:first-child
         margin-right: 0
+  .portfolio
+    padding: 50px 0 140px
+    &:before
+      display: none   
+  .conditions .section-title
+    width: 70%   
   .calculation
     background: #ffc000
     &-wrap
@@ -96,6 +127,14 @@
       font-size: 18px
     &-list__text
       width: 85%
+  .card 
+    width: 48%;
+  .reliability
+    padding: 60px 0
+    &-title
+      font-size: 28px
+      width: 85%
+      margin: 0 auto
   .form-calculation
     width: 80%
   .modal-form__title
@@ -106,6 +145,30 @@
       margin-right: 15px
   .form-modal
     width: 90%
+  .footer 
+    flex-wrap: wrap
+  .contacts
+    width: 100%
+    &-wrap
+      width: 767px
+      margin: 0 auto
+      order: -1
+    &__city:before 
+      left: -25%
+    &__mode:before 
+      left: -25%
+    &__tel:before 
+      left: -25%
+  .map
+    width: 100%
+  .arrow-left
+    left: 39%
+  .arrow-right
+    left: 51%
+  .step
+    max-width: 20%; 
+  .slider__item 
+    margin-right: 0
 @media (max-width: 768px)
   .container
     width: 95%
@@ -161,11 +224,16 @@
   .modal-discr__item_big 
     width: 70%
     text-align: center
-  .slider
-    &__item
-      margin-right: 100px
-      margin-left:  100px
-      width: 360px
+
+  .conditions .section-title 
+    width: 90%
+  .step 
+    max-width: 28%
+  .calculation
+    &__title
+      width: 100%
+    &__subtitle
+      width: 100% 
 @media (max-width: 576px)
   .contaner
     width: 90%
@@ -203,3 +271,12 @@
       width: 90%
   .modal-form
     width: 90%
+  .card 
+    width: 90%
+  .price-wrap
+    justify-content: center
+  .step 
+    max-width: 50% 
+  .reliability-title
+    width: 100%
+    font-size: 26px

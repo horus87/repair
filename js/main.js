@@ -3,7 +3,6 @@ $('.slider').slick({
   draggable: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  cssEase: 'ease-in',
   prevArrow: '<div class="arrow arrow-left"></div>',
   nextArrow: '<div class="arrow arrow-right"></div>',
   responsive: [
@@ -18,7 +17,6 @@ $('.slider').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
         slidesToShow: 1,
       
       }
