@@ -1,3 +1,38 @@
+#modal-mini-js
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background: #000
+  width: 100%
+  background: rgba(0, 0, 0 , 0.62)
+  z-index: 1
+  overflow: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  display: none
+.modal-mini__message
+  width: 400px
+  color: black
+  background: white
+  fonts-size: 30px
+  text-transform: uppercase
+  display: flex
+  flex-wrap: wrap
+  +bold
+  position: relative
+.modal-mini__title
+  width: 100%
+  background: $primary-color
+  text-align: center
+  margin: 0
+  padding: 10px 0
+.modal-mini__text
+  padding: 70px 0
+  text-align: center
+  width: 100%
 #modal-js
   position: fixed
   top: 0
@@ -17,6 +52,21 @@
     display: flex
     justify-content: center
     background: white
+    position: relative
+  &-close
+    position: absolute
+    width: 25px
+    top: 5px
+    right: 5px
+    height: 25px
+    border: 2px solid $text-color
+    border-radius: 50%
+    font-size: 14px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
   &-discr
     width: 51.2%
     padding: 80px 80px 38px

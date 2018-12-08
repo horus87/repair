@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ремонт квартир</title>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
+  <script>
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () {
         (m[i].a = m[i].a || []).push(arguments)
@@ -31,7 +32,6 @@
   </noscript>
   <!-- /Yandex.Metrika counter -->
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
@@ -88,7 +88,9 @@
           <!--main-adventage-->
         </div>
         <div class="main-img wow fadeInRight" data-wow-delay="0.8s">
-          <img src="img/main/main-img.png" class="main-img__image" alt="План-схема">
+          <div class="main-img__wrap">
+            <img src="img/main/main-img.png" class="main-img__image" alt="План-схема">
+          </div>
         </div>
       </div>
     </div>
@@ -128,23 +130,23 @@
         <span class="section__title">мы сделали более 500 ремонтов в&nbsp;квартирах&nbsp;и&nbsp;домах</span>
       </h2>
       <div class="slider-wrap">
-      <div class="slider wow fadeInRight">
-        <div class="slider__item"><img src="img/portfolio/slider-image1.png" alt="slide1"></div>
-        <!-- /.slider__item -->
-        <div class="slider__item"><img src="img/portfolio/slider-image2.png" alt="slide2"></div>
-        <!-- /.slider__item -->
-        <div class="slider__item"><img src="img/portfolio/slider-image3.png" alt="slide3"></div>
-        <!-- /.slider__item -->
-        <div class="slider__item"><img src="img/portfolio/slider-image1.png" alt="slide4"></div>
-        <!-- /.slider__item -->
-        <div class="slider__item"><img src="img/portfolio/slider-image2.png" alt="slide5"></div>
-        <!-- /.slider__item -->
-        <div class="slider__item"><img src="img/portfolio/slider-image3.png" alt="slide6"></div>
-        <!-- /.slider__item -->
+        <div class="slider wow fadeInRight">
+          <div class="slider__item"><img src="img/portfolio/slider-image1.png" alt="slide1"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/portfolio/slider-image2.png" alt="slide2"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/portfolio/slider-image3.png" alt="slide3"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/portfolio/slider-image1.png" alt="slide4"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/portfolio/slider-image2.png" alt="slide5"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/portfolio/slider-image3.png" alt="slide6"></div>
+          <!-- /.slider__item -->
+        </div>
+        <!-- /.slider -->
       </div>
-      <!-- /.slider -->
-    </div>
-    <!-- /.slider-wrap -->
+      <!-- /.slider-wrap -->
     </div>
     <!-- /.container -->
   </section>
@@ -310,6 +312,94 @@
   </section>
 
 
+  <section class="products">
+    <div class="container products-wrap">
+      <div class="product wow fadeInLeft" data-wow-delay="0.5s">
+        <img src="img/products/product-1.jpg" alt="материалы по оптовым ценам" class="product__img">
+        <div class="product__discr">Поможем закупить все материалы
+          по оптовым&nbsp;ценам у проверенных поставщиков
+        </div>
+        <!-- /.product__text -->
+      </div>
+      <!-- /.product -->
+
+      <div class="product wow fadeInUp" data-wow-delay="0.9s">
+        <img src="img/products/product-2.jpg" alt="максимальные скидки" class="product__img">
+        <div class="product__discr">Мы дадим Вам <span class="product-bold">максимальные скидки</span>
+          у наших партнеров для закупки материалов оптом
+        </div>
+        <!-- /.product__text -->
+      </div>
+      <!-- /.product -->
+
+      <div class="product wow fadeInRight" data-wow-delay="1.4s">
+        <img src="img/products/product-3.jpg" alt="проверенные поставщики" class="product__img">
+        <div class="product__discr">Все, что не сможете найти в городе -
+          поможем заказать <span class="product-bold">у проверенных
+            поставщиков </span>
+        </div>
+        <!-- /.product__text -->
+      </div>
+      <!-- /.product -->
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.products -->
+
+  <section class="guarantee">
+    <div class="container">
+      <h2 class="section-title">Все наши гарантийные обязательства
+        подробно и прозрачно описаны в договоре
+      </h2>
+      <!-- /.section-title -->
+      <div class="guarantee-wrap">
+        <div class="guarantee-card">
+          <div class="guarantee-card__img-wrap">
+            <img src="img/guarantee/guarantee-1.jpg" class="guarantee-card__img" alt="гарнтия №1">
+          </div>
+          <!-- /.guarantee-card__img -->
+          <div class="guarantee-card__discr">Гарантия на качество
+            выполняемых&nbsp;работ
+          </div>
+          <!-- /.guarantee-card__discr -->
+        </div>
+        <!-- /.guarantee-card -->
+
+        <div class="guarantee-card">
+          <div class="guarantee-card__img-wrap">
+            <img src="img/guarantee/guarantee-2.jpg" class="guarantee-card__img" alt="гарнтия №2">
+          </div>
+          <!-- /.guarantee-card__img -->
+          <div class="guarantee-card__discr">Гарантия на фиксированные цены
+            Виды работ и цены на них
+            прописаны в договоре
+          </div>
+          <!-- /.guarantee-card__discr -->
+        </div>
+        <!-- /.guarantee-card -->
+
+        <div class="guarantee-card">
+          <div class="guarantee-card__img-wrap">
+            <img src="img/guarantee/guarantee-3.jpg" class="guarantee-card__img" alt="гарнтия №3">
+          </div>
+          <!-- /.guarantee-card__img -->
+          <div class="guarantee-card__discr">Гарантия на точное соблюдение
+            сроков и ответственность за
+            их невыполнение
+          </div>
+          <!-- /.guarantee-card__discr -->
+        </div>
+        <!-- /.guarantee-card -->
+      </div>
+      <!-- /.guarantee-wrap -->
+
+    </div>
+
+    <!-- /.container -->
+  </section>
+  <!-- /.guarantee -->
+
   <section class="calculation">
     <div class="container calculation-wrap">
       <div class="calculation-text wow fadeInLeft" data-wow-delay="0.5s">
@@ -392,6 +482,8 @@
   <div class="modal" id="modal-js">
     <div class="container">
       <div class="modal__dialog">
+        <div class="modal-close">X</div>
+        <!-- /.modal-close -->
         <div class="modal-discr">
           <div class="modal-discr__item">
             <div class="modal-discr__img">
@@ -466,6 +558,8 @@
       </div>
 
       <div class="modal__dialog">
+        <div class="modal-close">X</div>
+        <!-- /.modal-close -->
         <div class="modal-discr">
           <div class="modal-discr__item">
             <div class="modal-discr__img">
@@ -536,6 +630,8 @@
 
 
       <div class="modal__dialog">
+        <div class="modal-close">X</div>
+        <!-- /.modal-close -->
         <div class="modal-discr">
           <div class="modal-discr__item_big">
             <div class="modal-discr__img modal-discr__img_big">
@@ -571,6 +667,8 @@
       </div>
 
       <div class="modal__dialog">
+        <div class="modal-close">X</div>
+        <!-- /.modal-close -->
         <div class="modal-discr">
           <div class="modal-discr__item_big">
             <div class="modal-discr__img modal-discr__img_big">
@@ -607,6 +705,8 @@
       </div>
 
       <div class="modal__dialog">
+        <div class="modal-close">X</div>
+        <!-- /.modal-close -->
         <div class="modal-discr">
           <div class="modal-discr__item_big">
             <div class="modal-discr__img modal-discr__img_big">
@@ -642,6 +742,8 @@
       </div>
 
       <div class="modal__dialog">
+        <div class="modal-close">X</div>
+        <!-- /.modal-close -->
         <div class="modal-discr">
           <div class="modal-discr__item_big">
             <div class="modal-discr__img modal-discr__img_big">
@@ -679,7 +781,13 @@
     </div>
 
   </div>
-
+  <div class="modal-mini" id="modal-mini-js">
+    <div class="modal-mini__message">
+      <div class="modal-close">X</div>
+      <h4 class="modal-mini__title">Данные отправлены!!!</h4>
+      <div class="modal-mini__text">мы презвоним вам в течении 10 минут</div>
+    </div>
+  </div>
 
 
 

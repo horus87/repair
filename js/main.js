@@ -26,8 +26,17 @@ $('.slider').slick({
 
 
 var modal = document.getElementById('modal-js');
+var modal2 = document.getElementById('modal-mini-js');
 var btn = document.getElementById('button-js');
 var btn2 = document.getElementById('button-js_sm');
+var btn3 = document.getElementsByClassName('modal-close');
+
+for (var i = 0; i < btn3.length; i++) {
+  btn3[i].addEventListener('click', function() {
+    modal.style.display = "none";
+    modal2.style.display = "none";
+  })
+}
 
 btn.onclick = function() {
     modal.style.display = "block";
@@ -38,11 +47,14 @@ btn2.onclick = function() {
 }
 
 
+
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
 }
+
+
 
 
 $( document ).ready(function() {
@@ -53,7 +65,7 @@ $( document ).ready(function() {
       url: "mailer/smart.php",
       data: $(this).serialize()
     }).done(function() {
-      alert('Данные отправлены успешно');
+      document.getElementById('modal-mini-js').style.display = 'flex';
       $(this).find("input").val("");
       $("form").trigger("reset");
     });
