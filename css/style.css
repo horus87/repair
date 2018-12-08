@@ -1170,7 +1170,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: flex;
+  display: none;
 }
 
 .modal-mini__message {
@@ -1943,6 +1943,10 @@ img {
   .product {
     max-width: 370px;
     width: 100%;
+  }
+  .modal-mini__message {
+    width: 90%;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
