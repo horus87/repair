@@ -1,6 +1,7 @@
 .main
   padding: 60px 0
   background-color: $light-bg-color
+  position: relative
   &-wrap 
     display: flex
   &-text 
@@ -17,12 +18,17 @@
         font-size: 20px
   &-img 
     flex-basis: 50%
-      position: absolute
-      width: 737px
-      left: 30%
-      top: 0
-      z-index: 2
-      display: block
+    position: absolute
+    width: 50%
+    height: 110%
+    left: 50%
+    top: 60px
+    background-size: contain
+    z-index: 2
+    display: block
+    background: url('../img/main/main-img.jpg') no-repeat 
+    &__wrap
+      display: none
   &-adventages
     display: flex
     flex-direction: column
