@@ -1173,7 +1173,7 @@ template {
   background: #000;
   width: 100%;
   background: rgba(0, 0, 0, 0.62);
-  z-index: 1;
+  z-index: 4;
   overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1226,7 +1226,7 @@ template {
   background: #000;
   width: 100%;
   background: rgba(0, 0, 0, 0.52);
-  z-index: 1;
+  z-index: 4;
   overflow: auto;
   display: none;
 }
