@@ -1,4 +1,8 @@
+## Rewrite Engine Code ##
 
+Options +FollowSymLinks
+
+RewriteEngine on
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
