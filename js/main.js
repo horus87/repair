@@ -24,47 +24,13 @@ $('.slider').slick({
   ]
 });
 
-
-var modal = document.getElementById('modal-js');
-var modal2 = document.getElementById('modal-mini-js');
-var modal3 = document.getElementById('modal-small-js');
-var btn = document.getElementById('button-js');
-var btn2 = document.getElementById('button-js_sm');
-var btn3 = document.getElementsByClassName('modal-close');
-var links = document.getElementsByClassName('card__link');
-
-for (var i = 0; i < btn3.length; i++) {
-  btn3[i].addEventListener('click', function() {
-    modal.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-
-  })
-}
-
+/*
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener('click', function() {
     modal3.style.display = "flex";
   })
 }
-
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-btn2.onclick = function() {
-  modal.style.display = "block";
-}
-
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
-
-
+*/
 
 
 $( document ).ready(function() {

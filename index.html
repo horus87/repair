@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="remodal/remodal.css">
+  <link rel="stylesheet" href="remodal/remodal-default-theme.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
@@ -25,10 +27,9 @@
           <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
         <div class="header-text__button">
-          <button class="button" id="button-js">
-            Перезвоните мне
+          <button class="button" id="button-js"><a href="#modal7" class="header-text__link">Перезвоните мне</a>
           </button>
-          <button class="button button_sm" id="button-js_sm"></button>
+          <button class="button button_sm" id="button-js_sm"><a href="#modal7" class="header-text__link header-text__link-sm"></a></button>
         </div>
       </div>
     </div>
@@ -92,7 +93,8 @@
         <div class="feedback-text__item feedback-text__item-1">Наш менеджер перезвонит Вам
           в&nbsp;течение&nbsp;60&nbsp;секунд
         </div>
-        <div class="feedback-text__item feedback-text__item-2">или перезвоните нам сами <a class="feedback-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
+        <div class="feedback-text__item feedback-text__item-2">или перезвоните нам сами <a class="feedback-text__phone"
+            href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
       </div>
 
@@ -145,7 +147,7 @@
           </div>
           <h4 class="card__title">Ремонт ванных комнат и с/у
           </h4>
-          <a href="#" class="card__link">Узнать цены</a>
+          <a href="#modal1" class="card__link">Узнать цены</a>
         </div>
         <div class="card wow fadeInUp" data-wow-delay="0.4s">
           <div class="card__img-wrap">
@@ -153,7 +155,7 @@
           </div>
           <h4 class="card__title">Ремонт комнат и квартир
           </h4>
-          <a href="#" class="card__link">Узнать цены</a>
+          <a href="#modal2" class="card__link">Узнать цены</a>
         </div>
         <div class="card wow fadeInUp" data-wow-delay="0.6s">
           <div class="card__img-wrap">
@@ -161,7 +163,7 @@
           </div>
           <h4 class="card__title">Отделка офисных помещений
           </h4>
-          <a href="#" class="card__link">Узнать цены</a>
+          <a href="#modal3" class="card__link">Узнать цены</a>
         </div>
         <div class="card wow fadeInUp" data-wow-delay="0.8s">
           <div class="card__img-wrap">
@@ -169,14 +171,14 @@
           </div>
           <h4 class="card__title">Ремонт в новостройках
           </h4>
-          <a href="#" class="card__link">Узнать цены</a>
+          <a href="#modal4" class="card__link">Узнать цены</a>
         </div>
         <div class="card wow fadeInUp" data-wow-delay="1s">
           <div class="card__img-wrap">
             <img src="img/price/price-5.jpg" alt="price-5" class="card__img">
           </div>
           <h4 class="card__title">Ремонт кухонь </h4>
-          <a href="#" class="card__link">Узнать цены</a>
+          <a href="#modal5" class="card__link">Узнать цены</a>
         </div>
         <div class="card wow fadeInUp" data-wow-delay="1.2s">
           <div class="card__img-wrap">
@@ -184,7 +186,7 @@
           </div>
           <h4 class="card__title">Ремонт дач и коттеджей
           </h4>
-          <a href="#" class="card__link">Узнать цены</a>
+          <a href="#modal6" class="card__link">Узнать цены</a>
         </div>
       </div>
     </div>
@@ -456,298 +458,326 @@
   <!-- /.footer -->
 
   <div class="modal" id="modal-js">
+
+
     <div class="container">
-      <div class="modal__dialog">
-        <div class="modal-close">X</div>
-        <!-- /.modal-close -->
-        <div class="modal-discr">
-          <div class="modal-discr__item">
-            <div class="modal-discr__img">
-              <img src="img/modal/bathroom.png" alt="bathroom">
+
+      <div class="remodal" data-remodal-id="modal1">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal__dialog">
+
+          <div class="modal-discr">
+            <div class="modal-discr__item">
+              <div class="modal-discr__img">
+                <img src="img/modal/bathroom.png" alt="bathroom">
+              </div>
+              <div class="modal-disicr__text">
+                <h5 class="modal-discr__title">Ванная комната</h5>
+                <div class="modal-disicr__line"></div>
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">135*150 - </span> 31 000 руб.</div>
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">170*170 - </span> 170*170 - 43
+                  000 руб.</div>
+              </div>
             </div>
-            <div class="modal-disicr__text">
-              <h5 class="modal-discr__title">Ванная комната</h5>
-              <div class="modal-disicr__line"></div>
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">135*150 - </span> 31 000 руб.</div>
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">170*170 - </span> 170*170 - 43
-                000 руб.</div>
+
+            <div class="modal-discr__item">
+              <div class="modal-discr__img">
+                <img src="img/modal/wc.png" alt="wc">
+              </div>
+              <div class="modal-disicr__text">
+                <h5 class="modal-discr__title">Туалет</h5>
+                <div class="modal-disicr__line"></div>
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">135*70 - </span> 14 000 руб.</div>
+              </div>
+            </div>
+
+            <div class="modal-discr__item">
+              <div class="modal-discr__img">
+                <img src="img/modal/combined-bathroom.png" alt="combined-bathroom">
+              </div>
+              <div class="modal-disicr__text">
+                <h5 class="modal-discr__title">Совмещенный санузел</h5>
+                <div class="modal-disicr__line"></div>
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">170*210 - </span>54 000 руб.</div>
+              </div>
+            </div>
+
+            <div class="modal-discr__item modal-discr__item_list">
+              <h4 class="modal-discr__title  modal-discr__title_list">В стоимость работ входит </h4>
+              <ul class="modal-list">
+                <li class="modal-list__item">Демонтаж старого покрытия стен и пола</li>
+                <li class="modal-list__item">Выравнивание стен гипсовыми составами</li>
+                <li class="modal-list__item">Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                <li class="modal-list__item">Монтаж кафельной плитки на полу и стенах</li>
+                <li class="modal-list__item">Установка реечного или натяжного потолка, светильников</li>
+                <li class="modal-list__item">Монтаж двери с коробкой </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="modal-form">
+            <h2 class="modal-form__title">Узнайте точную стоимость
+              ремонта по телефону!
+            </h2>
+            <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <form action="#" class="form form-modal">
+              <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
+                placeholder="Ваш телефон">
+              <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+              </button>
+            </form>
+            <div class="modal-form__text">
+              <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+                по&nbsp;телефону:
+              </div>
+              <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
             </div>
           </div>
 
-          <div class="modal-discr__item">
-            <div class="modal-discr__img">
-              <img src="img/modal/wc.png" alt="wc">
-            </div>
-            <div class="modal-disicr__text">
-              <h5 class="modal-discr__title">Туалет</h5>
-              <div class="modal-disicr__line"></div>
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">135*70 - </span> 14 000 руб.</div>
-            </div>
-          </div>
-
-          <div class="modal-discr__item">
-            <div class="modal-discr__img">
-              <img src="img/modal/combined-bathroom.png" alt="combined-bathroom">
-            </div>
-            <div class="modal-disicr__text">
-              <h5 class="modal-discr__title">Совмещенный санузел</h5>
-              <div class="modal-disicr__line"></div>
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">170*210 - </span>54 000 руб.</div>
-            </div>
-          </div>
-
-          <div class="modal-discr__item modal-discr__item_list">
-            <h4 class="modal-discr__title  modal-discr__title_list">В стоимость работ входит </h4>
-            <ul class="modal-list">
-              <li class="modal-list__item">Демонтаж старого покрытия стен и пола</li>
-              <li class="modal-list__item">Выравнивание стен гипсовыми составами</li>
-              <li class="modal-list__item">Грунтовка стен и пола антисептиком, бетоноконтактом</li>
-              <li class="modal-list__item">Монтаж кафельной плитки на полу и стенах</li>
-              <li class="modal-list__item">Установка реечного или натяжного потолка, светильников</li>
-              <li class="modal-list__item">Монтаж двери с коробкой </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="modal-form">
-          <h2 class="modal-form__title">Узнайте точную стоимость
-            ремонта по телефону!
-          </h2>
-          <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
-          </span>
-          <form action="#" class="form form-modal">
-            <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Ваш телефон">
-            <button type="submit" class="button form__button form-modal__button">Узнать стоимость
-            </button>
-          </form>
-          <div class="modal-form__text">
-            <div class="modal-form__callback">Или Вы можете перезвонить нам сами
-              по&nbsp;телефону:
-            </div>
-            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="modal__dialog">
-        <div class="modal-discr">
-          <div class="modal-discr__item">
-            <div class="modal-discr__img">
-              <img src="img/modal/room1.png" alt="room1">
-            </div>
-            <div class="modal-disicr__text">
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">12 м2 </span> - 36 000 руб.</div>
-            </div>
-          </div>
-
-          <div class="modal-discr__item">
-            <div class="modal-discr__img">
-              <img src="img/modal/room2.png" alt="room2">
-            </div>
-            <div class="modal-disicr__text">
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">16 м2 - </span>48 000 руб.. </div>
-            </div>
-          </div>
-
-          <div class="modal-discr__item">
-            <div class="modal-discr__img">
-              <img src="img/modal/room3.png" alt="room3">
-            </div>
-            <div class="modal-disicr__text">
-              <div class="modal-discr__price"><span class="modal-discr__price_normal">20 м2 - </span>60 000 руб </div>
-            </div>
-          </div>
-
-          <div class="modal-discr__item modal-discr__item_list">
-            <h4 class="modal-discr__title  modal-discr__title_list">В стоимость работ входит </h4>
-            <ul class="modal-list">
-              <li class="modal-list__item">Снятие верхнего слоя покрытия с потолка, стен и пола</li>
-              <li class="modal-list__item">Подготовка оконного откоса</li>
-              <li class="modal-list__item">Выравнивание стен гипсовыми составами</li>
-              <li class="modal-list__item">Виниловое покрытие, шлифовка, грунтовка</li>
-              <li class="modal-list__item">Поклейка обоев и покраска</li>
-              <li class="modal-list__item">Выравнивание потолка гипсовым составом</li>
-              <li class="modal-list__item">Оклейка потолка потолочными обоями или его покраска</li>
-              <li class="modal-list__item">Натяжной, тканевый или парящий потолок</li>
-              <li class="modal-list__item">Протяжка пола, покрытие паркетной доской, ламинатом или линолеумом</li>
-              <li class="modal-list__item">Замена электророзеток</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="modal-form">
-          <h2 class="modal-form__title">Узнайте точную стоимость
-            ремонта по телефону!
-          </h2>
-          <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
-          </span>
-          <form action="#" class="form form-modal">
-            <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required class="input input-tel required form__input   form-modal__input"
-              placeholder="Ваш телефон">
-            <button type="submit" class="button form__button form-modal__button">Узнать стоимость
-            </button>
-          </form>
-          <div class="modal-form__text">
-            <div class="modal-form__callback">Или Вы можете перезвонить нам сами
-              по&nbsp;телефону:
-            </div>
-            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
-          </div>
         </div>
       </div>
+      <!-- /.modal -->
 
+      <div class="remodal" data-remodal-id="modal2">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal__dialog">
+          <div class="modal-discr">
+            <div class="modal-discr__item">
+              <div class="modal-discr__img">
+                <img src="img/modal/room1.png" alt="room1">
+              </div>
+              <div class="modal-disicr__text">
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">12 м2 </span> - 36 000 руб.</div>
+              </div>
+            </div>
 
-      <div class="modal__dialog">
-        <div class="modal-discr">
-          <div class="modal-discr__item_big">
-            <div class="modal-discr__img modal-discr__img_big">
-              <img src="img/modal/office.png" alt="office">
+            <div class="modal-discr__item">
+              <div class="modal-discr__img">
+                <img src="img/modal/room2.png" alt="room2">
+              </div>
+              <div class="modal-disicr__text">
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">16 м2 - </span>48 000 руб..
+                </div>
+              </div>
             </div>
-            <div class="modal-discr__text modal-discr__text_big">
-              Цена отделки офисного помещения зависит от площади, использованных материалов и видов проделанных работ.
+
+            <div class="modal-discr__item">
+              <div class="modal-discr__img">
+                <img src="img/modal/room3.png" alt="room3">
+              </div>
+              <div class="modal-disicr__text">
+                <div class="modal-discr__price"><span class="modal-discr__price_normal">20 м2 - </span>60 000 руб </div>
+              </div>
             </div>
+
+            <div class="modal-discr__item modal-discr__item_list">
+              <h4 class="modal-discr__title  modal-discr__title_list">В стоимость работ входит </h4>
+              <ul class="modal-list">
+                <li class="modal-list__item">Снятие верхнего слоя покрытия с потолка, стен и пола</li>
+                <li class="modal-list__item">Подготовка оконного откоса</li>
+                <li class="modal-list__item">Выравнивание стен гипсовыми составами</li>
+                <li class="modal-list__item">Виниловое покрытие, шлифовка, грунтовка</li>
+                <li class="modal-list__item">Поклейка обоев и покраска</li>
+                <li class="modal-list__item">Выравнивание потолка гипсовым составом</li>
+                <li class="modal-list__item">Оклейка потолка потолочными обоями или его покраска</li>
+                <li class="modal-list__item">Натяжной, тканевый или парящий потолок</li>
+                <li class="modal-list__item">Протяжка пола, покрытие паркетной доской, ламинатом или линолеумом</li>
+                <li class="modal-list__item">Замена электророзеток</li>
+              </ul>
+            </div>
+
           </div>
 
-        </div>
-
-        <div class="modal-form">
-          <h2 class="modal-form__title">Узнайте точную стоимость
-            ремонта по телефону!
-          </h2>
-          <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
-          </span>
-          <form action="#" class="form form-modal">
-            <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Ваш телефон">
-            <button type="submit" class="button form__button form-modal__button">Узнать стоимость
-            </button>
-          </form>
-          <div class="modal-form__text">
-            <div class="modal-form__callback">Или Вы можете перезвонить нам сами
-              по&nbsp;телефону:
+          <div class="modal-form">
+            <h2 class="modal-form__title">Узнайте точную стоимость
+              ремонта по телефону!
+            </h2>
+            <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <form action="#" class="form form-modal">
+              <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required class="input input-tel required form__input   form-modal__input"
+                placeholder="Ваш телефон">
+              <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+              </button>
+            </form>
+            <div class="modal-form__text">
+              <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+                по&nbsp;телефону:
+              </div>
+              <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
             </div>
-            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
+      <!-- /.modal -->
 
-      <div class="modal__dialog">
-        <div class="modal-discr">
-          <div class="modal-discr__item_big">
-            <div class="modal-discr__img modal-discr__img_big">
-              <img src="img/modal/new-house.png" alt="new-house">
+      <div class="remodal" data-remodal-id="modal3">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal__dialog">
+          <div class="modal-discr">
+            <div class="modal-discr__item_big">
+              <div class="modal-discr__img modal-discr__img_big">
+                <img src="img/modal/office.png" alt="office">
+              </div>
+              <div class="modal-discr__text modal-discr__text_big">
+                Цена отделки офисного помещения зависит от площади, использованных материалов и видов проделанных
+                работ.
+              </div>
             </div>
-            <div class="modal-discr__text modal-discr__text_big">
-              Цена ремонта в новостройке будет зависеть от площади, использованных материалов и видов проделанных
-              работ.
-            </div>
+
           </div>
 
-        </div>
-
-        <div class="modal-form">
-          <h2 class="modal-form__title">Узнайте точную стоимость
-            ремонта по телефону!
-          </h2>
-          <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
-          </span>
-          <form action="#" class="form form-modal">
-            <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required class="input input-tel required form__input   form-modal__input"
-              placeholder="Ваш телефон">
-            <button type="submit" class="button form__button form-modal__button">Узнать стоимость
-            </button>
-          </form>
-          <div class="modal-form__text">
-            <div class="modal-form__callback">Или Вы можете перезвонить нам сами
-              по&nbsp;телефону:
+          <div class="modal-form">
+            <h2 class="modal-form__title">Узнайте точную стоимость
+              ремонта по телефону!
+            </h2>
+            <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <form action="#" class="form form-modal">
+              <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
+                placeholder="Ваш телефон">
+              <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+              </button>
+            </form>
+            <div class="modal-form__text">
+              <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+                по&nbsp;телефону:
+              </div>
+              <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
             </div>
-            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal__dialog">
-        <div class="modal-discr">
-          <div class="modal-discr__item_big">
-            <div class="modal-discr__img modal-discr__img_big">
-              <img src="img/modal/kitchen.png" alt="kitchen">
-            </div>
-            <div class="modal-discr__text modal-discr__text_big">
-              Цена ремонта кухни будет зависеть от площади, использованных материалов и видов проделанных работ.
-            </div>
-          </div>
-
-        </div>
-
-        <div class="modal-form">
-          <h2 class="modal-form__title">Узнайте точную стоимость
-            ремонта по телефону!
-          </h2>
-          <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
-          </span>
-          <form action="#" class="form form-modal">
-            <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Ваш телефон">
-            <button type="submit" class="button form__button form-modal__button">Узнать стоимость
-            </button>
-          </form>
-          <div class="modal-form__text">
-            <div class="modal-form__callback">Или Вы можете перезвонить нам сами
-              по&nbsp;телефону:
-            </div>
-            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
+      <!-- /.modal -->
 
-      <div class="modal__dialog">
-        <div class="modal-discr">
-          <div class="modal-discr__item_big">
-            <div class="modal-discr__img modal-discr__img_big">
-              <img src="img/modal/cottage.png" alt="cottage">
+      <div class="remodal" data-remodal-id="modal4">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal__dialog">
+          <div class="modal-discr">
+            <div class="modal-discr__item_big">
+              <div class="modal-discr__img modal-discr__img_big">
+                <img src="img/modal/new-house.png" alt="new-house">
+              </div>
+              <div class="modal-discr__text modal-discr__text_big">
+                Цена ремонта в новостройке будет зависеть от площади, использованных материалов и видов проделанных
+                работ.
+              </div>
             </div>
-            <div class="modal-discr__text modal-discr__text_big">
-              Цена ремонта дачного дома или коттеджа будет зависеть от площади, использованных материалов и видов
-              проделанных работ.
-            </div>
+
           </div>
 
-        </div>
-
-        <div class="modal-form">
-          <h2 class="modal-form__title">Узнайте точную стоимость
-            ремонта по телефону!
-          </h2>
-          <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
-          </span>
-          <form action="#" class="form form-modal">
-            <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Ваш телефон">
-            <button type="submit" class="button form__button form-modal__button">Узнать стоимость
-            </button>
-          </form>
-          <div class="modal-form__text">
-            <div class="modal-form__callback">Или Вы можете перезвонить нам сами
-              по&nbsp;телефону:
+          <div class="modal-form">
+            <h2 class="modal-form__title">Узнайте точную стоимость
+              ремонта по телефону!
+            </h2>
+            <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <form action="#" class="form form-modal">
+              <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required class="input input-tel required form__input   form-modal__input"
+                placeholder="Ваш телефон">
+              <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+              </button>
+            </form>
+            <div class="modal-form__text">
+              <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+                по&nbsp;телефону:
+              </div>
+              <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
             </div>
-            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
+      <!-- /.modal -->
+
+      <div class="remodal" data-remodal-id="modal5">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal__dialog">
+          <div class="modal-discr">
+            <div class="modal-discr__item_big">
+              <div class="modal-discr__img modal-discr__img_big">
+                <img src="img/modal/kitchen.png" alt="kitchen">
+              </div>
+              <div class="modal-discr__text modal-discr__text_big">
+                Цена ремонта кухни будет зависеть от площади, использованных материалов и видов проделанных работ.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-form">
+            <h2 class="modal-form__title">Узнайте точную стоимость
+              ремонта по телефону!
+            </h2>
+            <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <form action="#" class="form form-modal">
+              <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
+                placeholder="Ваш телефон">
+              <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+              </button>
+            </form>
+            <div class="modal-form__text">
+              <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+                по&nbsp;телефону:
+              </div>
+              <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
+
+      <div class="remodal" data-remodal-id="modal6">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal__dialog">
+          <div class="modal-discr">
+            <div class="modal-discr__item_big">
+              <div class="modal-discr__img modal-discr__img_big">
+                <img src="img/modal/cottage.png" alt="cottage">
+              </div>
+              <div class="modal-discr__text modal-discr__text_big">
+                Цена ремонта дачного дома или коттеджа будет зависеть от площади, использованных материалов и видов
+                проделанных работ.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-form">
+            <h2 class="modal-form__title">Узнайте точную стоимость
+              ремонта по телефону!
+            </h2>
+            <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+            </span>
+            <form action="#" class="form form-modal">
+              <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
+                placeholder="Ваш телефон">
+              <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+              </button>
+            </form>
+            <div class="modal-form__text">
+              <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+                по&nbsp;телефону:
+              </div>
+              <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
+
     </div>
 
   </div>
-  <div class="modal-mini" id="modal-mini-js">
+  <div class="remodal" data-remodal-id="modal-mini">
     <div class="modal-mini__message">
       <div class="modal-close">X</div>
       <h4 class="modal-mini__title">Данные отправлены!!!</h4>
@@ -755,9 +785,9 @@
     </div>
   </div>
 
-  <div class="modal-small" id="modal-small-js">
-    <div class="modal-form">
-      <div class="modal-close">X</div>
+  <div class="remodal"  data-remodal-id="modal7">
+    <div class="modal-form modal-form_center">
+        <button data-remodal-action="close" class="remodal-close"></button>
       <h2 class="modal-form__title">Узнайте точную стоимость
         ремонта по телефону!
       </h2>
@@ -779,7 +809,7 @@
     </div>
   </div>
   <!-- /.modal-small -->
-
+  <script src="remodal/remodal.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.maskedinput.js"></script>

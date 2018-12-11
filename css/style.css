@@ -422,6 +422,17 @@ template {
           align-items: center;
 }
 
+.header-text__link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.header-text__link-sm {
+  height: 20px;
+  width: 40px;
+  display: block;
+}
+
 .header-text__contacts {
   margin-right: 30px;
   text-align: right;
@@ -1184,6 +1195,25 @@ template {
   display: block;
 }
 
+.remodal {
+  max-width: 1170px;
+  background: none;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.remodal-close {
+  z-index: 99;
+  right: 0;
+  left: auto;
+}
+
+.modal-form_center {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
 .modal-small {
   position: fixed;
   top: 0;
@@ -1200,29 +1230,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#modal-mini-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.62);
-  z-index: 4;
-  overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
 }
 
 .modal-mini__message {
@@ -1333,12 +1340,14 @@ template {
   font-size: 16px;
   display: block;
   font-family: 'Museo Sans Medium', sans-serif;
+  text-align: left;
 }
 
 .modal-discr__price {
   margin-bottom: 5px;
   font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
+  text-align: left;
 }
 
 .modal-discr__price_normal {
@@ -1482,6 +1491,7 @@ template {
   font-size: 14px;
   color: #000000;
   position: relative;
+  text-align: left;
 }
 
 .modal-list__item::before {

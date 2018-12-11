@@ -1,3 +1,16 @@
+.remodal 
+  max-width: 1170px
+  background: none  
+  padding: 0
+  margin-top: 100px
+  &-close
+    z-index: 99
+    right: 0
+    left: auto
+
+.modal-form_center
+  +center-block
+  position: relative
 .modal-small
   position: fixed
   top: 0
@@ -11,22 +24,7 @@
   justify-content: center
   align-items: center
 
-  
-#modal-mini-js
-  position: fixed
-  top: 0
-  left: 0
-  height: 100%
-  width: 100%
-  background: #000
-  width: 100%
-  background: rgba(0, 0, 0 , 0.62)
-  z-index: 4
-  overflow: auto
-  display: flex
-  justify-content: center
-  align-items: center
-  display: none
+
 .modal-mini__message
   width: 400px
   color: black
@@ -98,10 +96,12 @@
       font-size: 16px
       display: block
       +medium
+      text-align: left
     &__price
       margin-bottom: 5px
       font-size: 16px
       +bold
+      text-align: left
       &_normal
         font-family: 'Museo Sans Light', sans-serif
 .modal-disicr__text
@@ -194,6 +194,7 @@
     font-size: 14px
     color: #000000
     position: relative
+    text-align: left
     &::before
       content: ''
       position: absolute
