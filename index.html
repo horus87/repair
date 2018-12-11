@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -82,7 +84,7 @@
       <form action="#" class="form form-feedback js-ajax">
         <input type="text" name="names" class="input input-name form__input form-feedback__input" placeholder="Ваше имя">
         <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input form-feedback__input"
-          placeholder="Тел: +7-XXX-XX-XX-XXX">
+          placeholder="Ваш телефон">
         <button type="submit" class="button form__button form-feedback__button">Получить бесплатный дизайн-проект
         </button>
       </form>
@@ -90,8 +92,7 @@
         <div class="feedback-text__item feedback-text__item-1">Наш менеджер перезвонит Вам
           в&nbsp;течение&nbsp;60&nbsp;секунд
         </div>
-        <div class="feedback-text__item feedback-text__item-2">или перезвоните нам сами <span class="feedback-text__item_b">+7
-            (495) 42-251-31</span>
+        <div class="feedback-text__item feedback-text__item-2">или перезвоните нам сами <a class="feedback-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
       </div>
 
@@ -410,7 +411,7 @@
         <form action="#" class="form form-calculation js-ajax">
           <input type="text" name="names" class="input input-name form__input form-calculation__input" placeholder="Ваше имя">
           <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input form-calculation__input"
-            placeholder="Тел: +7-XXX-XX-XX-XXX">
+            placeholder="Ваш телефон">
           <button type="submit" class="button form__button form-calculation__button">Рассчитать стоимость
           </button>
         </form>
@@ -437,15 +438,15 @@
           по&nbsp;всем вопросам ремонта
         </h3>
         <div class="contacts__city">г. Москва
-          <span class="bold"> ул. Ленинга, д. 10,
-            корпус 2, оф. 308</span></div>
+          <span class="bold"> ул. Ленинга, д. 10,</span>
+          <span class="bold"> корпус 2, оф. 308</span></div>
         <!-- /.contacts__city -->
         <div class="contacts__mode">Режим работы:
           <span class="bold"> с 9:00 до 18:00</span>
         </div>
         <!-- /.contacts__mode -->
         <div class="contacts__tel">Телефон:
-          <span class="bold">+ 7 (495) 42-251-31</span></div>
+          <a class="contacts__phone" href="tel:+74954225131">+7 (495) 42-251-31</a></div>
         <!-- /.contacts__tel -->
       </div>
       <!-- /.contacts -->
@@ -518,7 +519,7 @@
           <form action="#" class="form form-modal">
             <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Тел: +7-XXX-XX-XX-XXX">
+              placeholder="Ваш телефон">
             <button type="submit" class="button form__button form-modal__button">Узнать стоимость
             </button>
           </form>
@@ -526,7 +527,7 @@
             <div class="modal-form__callback">Или Вы можете перезвонить нам сами
               по&nbsp;телефону:
             </div>
-            <div class="modal-form__tel">+7 (8182) 42-51-31</div>
+            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
 
@@ -590,7 +591,7 @@
           <form action="#" class="form form-modal">
             <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required class="input input-tel required form__input   form-modal__input"
-              placeholder="Тел: +7-XXX-XX-XX-XXX">
+              placeholder="Ваш телефон">
             <button type="submit" class="button form__button form-modal__button">Узнать стоимость
             </button>
           </form>
@@ -598,7 +599,7 @@
             <div class="modal-form__callback">Или Вы можете перезвонить нам сами
               по&nbsp;телефону:
             </div>
-            <div class="modal-form__tel">+7 (8182) 42-51-31</div>
+            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
@@ -628,7 +629,7 @@
           <form action="#" class="form form-modal">
             <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Тел: +7-XXX-XX-XX-XXX">
+              placeholder="Ваш телефон">
             <button type="submit" class="button form__button form-modal__button">Узнать стоимость
             </button>
           </form>
@@ -636,7 +637,7 @@
             <div class="modal-form__callback">Или Вы можете перезвонить нам сами
               по&nbsp;телефону:
             </div>
-            <div class="modal-form__tel">+7 (8182) 42-51-31</div>
+            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
@@ -666,7 +667,7 @@
           <form action="#" class="form form-modal">
             <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required class="input input-tel required form__input   form-modal__input"
-              placeholder="Тел: +7-XXX-XX-XX-XXX">
+              placeholder="Ваш телефон">
             <button type="submit" class="button form__button form-modal__button">Узнать стоимость
             </button>
           </form>
@@ -674,7 +675,7 @@
             <div class="modal-form__callback">Или Вы можете перезвонить нам сами
               по&nbsp;телефону:
             </div>
-            <div class="modal-form__tel">+7 (8182) 42-51-31</div>
+            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
@@ -703,7 +704,7 @@
           <form action="#" class="form form-modal">
             <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Тел: +7-XXX-XX-XX-XXX">
+              placeholder="Ваш телефон">
             <button type="submit" class="button form__button form-modal__button">Узнать стоимость
             </button>
           </form>
@@ -711,7 +712,7 @@
             <div class="modal-form__callback">Или Вы можете перезвонить нам сами
               по&nbsp;телефону:
             </div>
-            <div class="modal-form__tel">+7 (8182) 42-51-31</div>
+            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
@@ -741,7 +742,7 @@
           <form action="#" class="form form-modal">
             <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
-              placeholder="Тел: +7-XXX-XX-XX-XXX">
+              placeholder="Ваш телефон">
             <button type="submit" class="button form__button form-modal__button">Узнать стоимость
             </button>
           </form>
@@ -749,7 +750,7 @@
             <div class="modal-form__callback">Или Вы можете перезвонить нам сами
               по&nbsp;телефону:
             </div>
-            <div class="modal-form__tel">+7 (8182) 42-51-31</div>
+            <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
           </div>
         </div>
       </div>
@@ -764,10 +765,34 @@
     </div>
   </div>
 
-
+  <div class="modal-small" id="modal-small-js">
+    <div class="modal-form">
+      <div class="modal-close">X</div>
+      <h2 class="modal-form__title">Узнайте точную стоимость
+        ремонта по телефону!
+      </h2>
+      <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами
+      </span>
+      <form action="#" class="form form-modal">
+        <input type="text" name="names" class="input input-name form__input form-modal__input" placeholder="Ваше имя">
+        <input type="tel" name="phone" required pattern="\+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" class="input input-tel required form__input   form-modal__input"
+          placeholder="Ваш телефон">
+        <button type="submit" class="button form__button form-modal__button">Узнать стоимость
+        </button>
+      </form>
+      <div class="modal-form__text">
+        <div class="modal-form__callback">Или Вы можете перезвонить нам сами
+          по&nbsp;телефону:
+        </div>
+        <div class="modal-form__tel"><a class="modal-form__phone" href="tel:+781824225131">+7 (8182) 42-51-31</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-small -->
 
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
   <script>
     new WOW().init();
   </script>

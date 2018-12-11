@@ -27,14 +27,24 @@ $('.slider').slick({
 
 var modal = document.getElementById('modal-js');
 var modal2 = document.getElementById('modal-mini-js');
+var modal3 = document.getElementById('modal-small-js');
 var btn = document.getElementById('button-js');
 var btn2 = document.getElementById('button-js_sm');
 var btn3 = document.getElementsByClassName('modal-close');
+var links = document.getElementsByClassName('card__link');
 
 for (var i = 0; i < btn3.length; i++) {
   btn3[i].addEventListener('click', function() {
     modal.style.display = "none";
     modal2.style.display = "none";
+    modal3.style.display = "none";
+
+  })
+}
+
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function() {
+    modal3.style.display = "flex";
   })
 }
 
@@ -77,3 +87,13 @@ $( document ).ready(function() {
 document.querySelector('#button-js').addEventListener('click', function() {
   yaCounter51456473.reachGoal('btn'); return true;
 });
+
+
+var telInp = $('input[type="tel"]');
+      
+telInp.each(function(){
+  $(this).mask("+7-999-99-99-999");
+});
+
+
+  

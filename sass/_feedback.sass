@@ -26,9 +26,6 @@
       line-height: 24px
       text-align: left
       color: $text-color
-      &_b 
-        +bold
-        display: block
       &-2
         position: relative
         width: 36%
@@ -43,6 +40,14 @@
         background: url('../img/feedback/phone.png') no-repeat center center
         border: 2px solid #cccccc
         border-radius: 50%
+    &__phone
+      display: block
+      +bold
+      font-size: 15px
+      text-decoration: none
+      color: $text-color
+      &:hover
+        text-decoration: underline
   &__title
     width: 44%
     font-size: 24px

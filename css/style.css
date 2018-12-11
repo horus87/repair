@@ -584,11 +584,6 @@ template {
   color: #333333;
 }
 
-.feedback-text__item_b {
-  font-family: 'Museo Sans Bold', sans-serif;
-  display: block;
-}
-
 .feedback-text__item-2 {
   position: relative;
   width: 36%;
@@ -605,6 +600,18 @@ template {
   background: url("../img/feedback/phone.png") no-repeat center center;
   border: 2px solid #cccccc;
   border-radius: 50%;
+}
+
+.feedback-text__phone {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.feedback-text__phone:hover {
+  text-decoration: underline;
 }
 
 .feedback__title {
@@ -747,6 +754,7 @@ template {
 .card:hover {
   -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .card:hover > .card__img-wrap:after {
@@ -1146,6 +1154,18 @@ template {
   background: url("../img/footer/phone-icon.png");
 }
 
+.contacts__phone {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts__phone:hover {
+  text-decoration: underline;
+}
+
 .contacts__title {
   width: 60%;
   margin: 0 0 100px 31%;
@@ -1162,6 +1182,24 @@ template {
 .bold {
   font-family: 'Museo Sans Bold', sans-serif;
   display: block;
+}
+
+.modal-small {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.62);
+  z-index: 4;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #modal-mini-js {
@@ -1267,6 +1305,7 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  z-index: 99;
 }
 
 .modal-discr {
@@ -1323,6 +1362,20 @@ template {
 .modal-form {
   width: 48.8%;
   padding: 75px 0;
+  background: white;
+  position: relative;
+}
+
+.modal-form__phone {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.modal-form__phone:hover {
+  text-decoration: underline;
 }
 
 .modal-form__title {
@@ -1476,6 +1529,14 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .animated {
+    -webkit-transition-property: none;
+    transition-property: none;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation: none;
+            animation: none;
+  }
   .container {
     width: 970px;
   }
@@ -1590,6 +1651,9 @@ img {
   }
   .guarantee-card {
     width: 30%;
+  }
+  .next-arrow {
+    display: none;
   }
 }
 
@@ -1754,7 +1818,12 @@ img {
     left: 51%;
   }
   .step {
-    max-width: 20%;
+    max-width: 22%;
+  }
+  .step-wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .slider__item {
     margin-right: 0;
@@ -1777,6 +1846,9 @@ img {
   .guarantee-card {
     width: 38%;
     margin-bottom: 50px;
+  }
+  .modal-form__phone {
+    font-size: 20px;
   }
 }
 
@@ -1872,6 +1944,11 @@ img {
   .step {
     max-width: 28%;
   }
+  .step-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .calculation__title {
     width: 100%;
   }
@@ -1960,7 +2037,7 @@ img {
             justify-content: center;
   }
   .step {
-    max-width: 50%;
+    max-width: 60%;
   }
   .reliability-title {
     width: 100%;
@@ -1979,6 +2056,15 @@ img {
   .modal-mini__message {
     width: 90%;
     font-size: 24px;
+  }
+  .contacts__city {
+    width: 50%;
+  }
+  .contacts__mode {
+    width: 50%;
+  }
+  .contacts__tel {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,17 @@
+.modal-small
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100% 
+  width: 100%
+  background: rgba(0, 0, 0 , 0.62)
+  z-index: 4
+  display: none
+  justify-content: center
+  align-items: center
+
+  
 #modal-mini-js
   position: fixed
   top: 0
@@ -68,6 +82,7 @@
     align-items: center
     justify-content: center
     cursor: pointer
+    z-index: 99
   &-discr
     width: 51.2%
     padding: 80px 80px 38px
@@ -102,6 +117,16 @@
 .modal-form
   width: 48.8%
   padding: 75px 0
+  background: white
+  position: relative
+  &__phone
+    display: block
+    +bold
+    font-size: 24px
+    text-decoration: none
+    color: #000000
+    &:hover
+      text-decoration: underline
   &__title
     width: 64.6%
     text-align: center

@@ -1,6 +1,3 @@
-## Rewrite Engine Code ##
-
-Options +FollowSymLinks
 
 RewriteEngine on
 # BEGIN WordPress
